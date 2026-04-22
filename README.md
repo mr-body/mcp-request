@@ -64,3 +64,4 @@ mcpExect call-tool get_organizations '{}' https://shop.maiomb.com/mcp
 - O binário exposto no `package.json` é `mcpExect`.
 - O projeto usa Bun como runtime principal.
 # mcp-request
+# mcp-request
