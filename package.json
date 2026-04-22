@@ -1,5 +1,5 @@
 {
-  "name": "mcp",
+  "name": "mcp-request",
   "module": "index.ts",
   "type": "module",
   "private": true,
@@ -39,3 +39,4 @@
     "mcpExect": "./index.ts"
   }
 }
+

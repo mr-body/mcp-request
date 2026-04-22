@@ -13,6 +13,7 @@ function printUsage() {
   console.log("Transportes aceitos: http, sse, websocket, stdio");
 }
 
+
 async function main() {
   const [, , url, transportArg] = process.argv;
 

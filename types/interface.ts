@@ -10,6 +10,7 @@ export interface JsonRpcSuccess<T> {
     result: T;
 }
 
+
 export interface JsonRpcError {
     jsonrpc: "2.0";
     id: string | number | null;

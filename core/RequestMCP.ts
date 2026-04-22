@@ -21,6 +21,7 @@ export class McpRequest {
   private readonly promptsService: PromptsService;
   private readonly catalogService: CatalogService;
 
+  
   constructor(url: string, transport: McpTransport = "http", apiKey?: string) {
     this.config = { url, transport, apiKey };
     this.toolsService = new ToolsService(this.config);

@@ -17,6 +17,7 @@ bun run index.ts https://shop.maiomb.com/mcp
 bun run index.ts https://shop.maiomb.com/mcp https://umooja.vercel.app/mcp
 ```
 
+
 Também aceita lista separada por vírgula:
 
 ```bash
