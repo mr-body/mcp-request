@@ -1,0 +1,41 @@
+{
+  "name": "mcp",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "bun run index.ts",
+    "pack": "mkdir -p packages && npm pack && mv *.tgz packages/"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packDestination": "./packages",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helena-mother/hellena-javascript-SDK.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Helena-mother/hellena-javascript-SDK/issues"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "bin": {
+    "mcpExect": "./index.ts"
+  }
+}
