@@ -1,4 +1,4 @@
-# mcp-request
+# MCP Request
 
 CLI em Bun para consultar servidores MCP, listar recursos e executar tools/prompts.
 
@@ -13,15 +13,14 @@ bun install
 Listar informações de um ou mais servidores:
 
 ```bash
-bun run index.ts https://shop.maiomb.com/mcp
-bun run index.ts https://shop.maiomb.com/mcp https://umooja.vercel.app/mcp
+bun run index.ts https://shop.maiomb.com/mcp http
 ```
 
 
 Também aceita lista separada por vírgula:
 
 ```bash
-bun run index.ts https://shop.maiomb.com/mcp,https://umooja.vercel.app/mcp
+bun run index.ts https://shop.maiomb.com/mcp,https://umooja.vercel.app/mcp htt
 ```
 
 ## Comandos
@@ -50,19 +49,17 @@ Para expor o binário:
 
 ```bash
 bun link
-mcpExect
+mcp-req
 ```
 
 Exemplos:
 
 ```bash
-mcpExect https://shop.maiomb.com/mcp https://umooja.vercel.app/mcp
-mcpExect call-tool get_organizations '{}' https://shop.maiomb.com/mcp
+mcp-req https://shop.maiomb.com/mcp https://umooja.vercel.app/mcp
+mcp-req call-tool get_organizations '{}' https://shop.maiomb.com/mcp
 ```
 
 ## Observações
 
-- O binário exposto no `package.json` é `mcpExect`.
+- O binário exposto no `package.json` é `mcp-req`.
 - O projeto usa Bun como runtime principal.
-# mcp-request
-# mcp-request
